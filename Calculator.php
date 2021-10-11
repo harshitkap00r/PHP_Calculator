@@ -47,7 +47,7 @@
           <p>
             <?php
 
-            if (isset($_POST['submit'])) {
+            if ($_POST) {
               $num1 = $_POST['num1'];
               $num2 = $_POST['num2'];
               $operation = $_POST['operation'];
@@ -68,8 +68,6 @@
                   $div = $num1 / $num2;
                   echo "The division of two number is {$div}";
                   break;
-                default:
-                  echo "Sorry it not exist!";
               }
             }
             ?>
